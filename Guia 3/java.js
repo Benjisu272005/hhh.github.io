@@ -13,14 +13,14 @@
 
         function validarNombre(nombre) {
             const limpio = nombre.trim();
-            if (limpio === '') return 'Escribe tu nombre.';
+            if (limpio === '') return 'Escriba su nombre.';
             if (limpio.length < 2) return 'Tu nombre debe tener al menos 2 letras.';
             return '';
         }
 
         function validarCelular(celular) {
             const limpio = celular.replace(/\s/g, '');
-            if (limpio === '') return 'Escribe tu número de celular.';
+            if (limpio === '') return 'Escriba su número de celular.';
             if (!/^9\d{8}$/.test(limpio)) {
                 return 'El celular debe tener 9 dígitos y empezar con 9. Ejemplo: 987 654 321.';
             }
@@ -28,7 +28,7 @@
         }
 
         function validarProducto(producto) {
-            return producto === '' ? 'Elige un producto.' : '';
+            return producto === '' ? 'Elija un producto.' : '';
         }
 
         function validarCantidad(valor) {
@@ -42,7 +42,7 @@
 
         // Reto: Validar que la fecha no sea anterior a hoy
         function validarFecha(fechaIngresada) {
-            if (fechaIngresada === '') return 'Elige la fecha de recojo.';
+            if (fechaIngresada === '') return 'Elija la fecha de recojo.';
 
             const hoy = new Date();
             const anio = hoy.getFullYear();
@@ -106,13 +106,13 @@
 
             // Validar casilla de consentimiento
             const acepta = document.getElementById('consentimiento').checked;
-            const avisoConsentimiento = 'Necesitamos tu autorización para atender el pedido.';
+            const avisoConsentimiento = 'Necesitamos su autorización para atender el pedido correspondiente.';
             mostrarError('consentimiento', acepta ? '' : avisoConsentimiento);
             if (!acepta && primerError === null) primerError = 'consentimiento';
 
             // Si hay errores, mover el foco al primer campo con falla
             if (primerError !== null) {
-                estado.textContent = 'Revisa los campos marcados para continuar.';
+                estado.textContent = 'Revise los campos solicitados para continuar.';
                 document.getElementById(primerError).focus();
                 return;
             }

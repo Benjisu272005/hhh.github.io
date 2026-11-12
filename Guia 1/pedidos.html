@@ -7,16 +7,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #d97706;
-            --bg: #fdfbf7;
+            --primary: #835300;
+            --bg: #8f6209cb;
             --text: #1c1917;
-            --muted: #78716c;
+            --muted: #fafafa;
         }
         html { scroll-behavior: smooth; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
         
-        header { background: #fff; border-bottom: 1px solid #f5e6d3; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 10; }
+        header { background: #faead1; border-bottom: 1px solid #ffcc8a9f; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 10; }
         .logo { font-weight: 700; color: var(--primary); font-size: 1.25rem; text-decoration: none; }
         nav { display: flex; gap: 1.2rem; }
         nav a { text-decoration: none; color: var(--text); font-weight: 600; font-size: 0.9rem; }
@@ -29,11 +29,11 @@
         form { background: #fff; padding: 1.5rem; border-radius: 12px; border: 1px solid #f5e6d3; display: flex; flex-direction: column; gap: 1rem; }
         
         label { font-weight: 600; font-size: 0.85rem; display: block; margin-bottom: 0.3rem; }
-        input, select, textarea { width: 100%; padding: 0.7rem; border: 1px solid #d6d3d1; border-radius: 8px; font-family: inherit; font-size: 0.9rem; background: #fafaf9; }
+        input, select, textarea { width: 100%; padding: 0.7rem; border: 1px solid #a8a29e; border-radius: 8px; font-family: inherit; font-size: 0.9rem; background: #fafaf9; }
         input:focus, select:focus, textarea:focus { outline: none; border-color: var(--primary); background: #fff; }
         textarea { resize: vertical; min-height: 80px; }
 
-        .checkbox-group { display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.85rem; color: var(--muted); }
+        .checkbox-group { display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.85rem; color: #8d7361e1; }
         .checkbox-group input { width: auto; margin-top: 0.2rem; }
 
         button { background: var(--primary); color: #fff; font-family: inherit; font-weight: 700; padding: 0.8rem; border: none; border-radius: 8px; cursor: pointer; font-size: 0.95rem; }
@@ -56,13 +56,13 @@
     </header>
 
     <main>
-        <h1>Haz tu pedido</h1>
-        <p class="subtitle">Te confirmaremos por WhatsApp en menos de una hora.</p>
+        <h1>Realiza tu pedido</h1>
+        <p class="subtitle">Le confirmaremos por WhatsApp en menos de una hora.</p>
 
         <form action="#">
             <div>
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" required placeholder="Tu nombre">
+                <input type="text" id="nombre" required placeholder="Nombre">
             </div>
 
             <div>
@@ -93,7 +93,7 @@
 
             <div>
                 <label for="notas">Indicaciones (opcional)</label>
-                <textarea id="notas" placeholder="Ej. Torta sin frutos secos..."></textarea>
+                <textarea id="notas" placeholder="Ej. Torta de Tres Leches..."></textarea>
             </div>
 
             <div class="checkbox-group">
